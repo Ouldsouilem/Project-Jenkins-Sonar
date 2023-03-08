@@ -205,6 +205,17 @@ public class User {
 
 		return equals;
 	}
+	
+	public String getFollowsString() {
+        // Clonage pour éviter les modifications exterieures
+        Set<String> list = new HashSet<>(this.mFollows);
+        String res = "";
+        for (String foll : list) {
+            res += foll + " ";
+        }
+        System.out.println(res);
+        return res;
+    }
 
 	/**
 	 * {@inheritDoc}

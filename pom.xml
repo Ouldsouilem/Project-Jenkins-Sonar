@@ -12,7 +12,32 @@
     <artifactId>jaxb-api</artifactId>
     <version>2.3.1</version>
 </dependency>
+<dependency>
+ <groupId>org.sonarsource.scanner.maven</groupId>
+ <artifactId>sonar-maven-plugin</artifactId>
+ <version>3.9.0.2155</version>
+</dependency>
 </dependencies>
+
+<properties>
+    <sonar.projectKey>my-project-key</sonar.projectKey>
+    <sonar.sources>C:\Users\hould\eclipse-workspace\projet-meta.zip_expanded\projet-ihm\src</sonar.sources>
+  </properties>
+  
+  <profiles>
+<profile>
+<id>sonar</id>
+<activation>
+<activeByDefault>true</activeByDefault>
+</activation>
+<properties>
+<!-- Optional URL to server. Default value is http://localhost:9000/ -->
+<sonar.host.url>
+http://localhost:9000/
+</sonar.host.url>
+</properties>
+</profile>
+</profiles>
   
   <build>
     <sourceDirectory>src</sourceDirectory>

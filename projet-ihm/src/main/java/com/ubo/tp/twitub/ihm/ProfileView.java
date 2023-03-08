@@ -29,38 +29,39 @@ public class ProfileView extends JFrame {
     public ProfileView(UserController controller, User res,TwitController tw) {
         super("My App");
         this.res = res;
+        this.setSize(700,500);
         this.tw = tw;
         JMenuBar menuBar = new JMenuBar();
         JMenu profil = new JMenu("Profil");
         profil.setForeground(Color.WHITE);
-        profil.setBackground(Color.BLUE);
+        profil.setBackground(new Color(41, 128, 185));
         JMenu deconnexion = new JMenu("Deconnexion");
         deconnexion.setForeground(Color.WHITE);
-        deconnexion.setBackground(Color.BLUE);
+        deconnexion.setBackground(new Color(41, 128, 185));
         JMenu twit = new JMenu("Twit");
         twit.setForeground(Color.WHITE);
-        twit.setBackground(Color.BLUE);
+        twit.setBackground(new Color(41, 128, 185));
 
         JMenuItem menuItem = new JMenuItem("Deconnexion");
         menuItem.addActionListener(e -> System.exit(0));
         menuItem.setForeground(Color.WHITE);
-        menuItem.setBackground(Color.BLUE);
+        menuItem.setBackground(new Color(41, 128, 185));
 
         JMenuItem home = new JMenuItem("Home");
         home.setForeground(Color.WHITE);
-        home.setBackground(Color.BLUE);
+        home.setBackground(new Color(41, 128, 185));
         JMenuItem ListeU = new JMenuItem("Liste Utilisateurs");
         ListeU.setForeground(Color.WHITE);
-        ListeU.setBackground(Color.BLUE);
+        ListeU.setBackground(new Color(41, 128, 185));
         JMenuItem search = new JMenuItem("Search");
         search.setForeground(Color.WHITE);
-        search.setBackground(Color.BLUE);
+        search.setBackground(new Color(41, 128, 185));
         JMenuItem sendTwit = new JMenuItem("Send twit");
         sendTwit.setForeground(Color.WHITE);
-        sendTwit.setBackground(Color.BLUE);
+        sendTwit.setBackground(new Color(41, 128, 185));
         JMenuItem searchtwit = new JMenuItem("Search twit");
         searchtwit.setForeground(Color.WHITE);
-        searchtwit.setBackground(Color.BLUE);
+        searchtwit.setBackground(new Color(41, 128, 185));
         twit.add(sendTwit);
         twit.add(searchtwit);
         profil.add(home);
@@ -72,7 +73,7 @@ public class ProfileView extends JFrame {
         menuBar.add(deconnexion);
         menuBar.add(twit);
         menuBar.setForeground(Color.WHITE);
-        menuBar.setBackground(Color.BLUE);
+        menuBar.setBackground(new Color(41, 128, 185));
 
         setJMenuBar(menuBar);
 
