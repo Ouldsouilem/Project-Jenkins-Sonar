@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:userXml xmlns:ns2="http://www.example.org/twit/">
+    <ID>abed3de2-ac03-41d9-bd83-4dbcd054647e</ID>
+    <UserTag>@toto</UserTag>
+    <UserPassword>toto</UserPassword>
+    <Name>toto</Name>
+    <AvatarPath>C:\Users\mabraim\OneDrive - AMEXIO\Images\hiboux.jpg</AvatarPath>
+    <follows>@titi</follows>
+</ns2:userXml>
